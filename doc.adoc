@@ -1,0 +1,16 @@
+* docker build --rm -t dcorona/cron-example .
+* docker run -t -i --rm dcorona/cron-example
+
+** fix permission issue with data directory (test.txt)
+** enable cron job (not process) writing/reading to same files as php
+** start with no files in the data directory and have them appear
+** change php version to 7.1
+
+
+
+** deploy app to aws beanstalk
+** docker-compose file documentation to deploy
+** avoid any load-balancing options (high-availability)
+** have same functionality as local application
+** may need to convert code volume into code being copied to the container via dockerfile
+**

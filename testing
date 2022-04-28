@@ -1,0 +1,11 @@
+# * * * * * root echo "Hello world" >> /var/log/cron.log 2>&1
+* * * * * root echo hello > /proc/1/fd/1 2>/proc/1/fd/2
+# Don't remove the empty line at the end of this file. It is required to run the cron job
+
+* * * * * root date >> /tmp/data/cron.log
+
+* * * * * root echo "cron $(date)" >> /tmp/data/test.txt
+
+# * * * * * php echo "cron $(date)" >> /tmp/data/newdirectory/testfile.txt
+
+* * * * * apache echo "apache $(date)" >> /tmp/data/newdirectory/testfile.txt
